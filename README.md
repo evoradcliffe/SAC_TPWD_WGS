@@ -33,6 +33,7 @@ For each raw bam file generated in Step 2, use picard to mark duplicates and add
 Again need to generate a list of commands to feed into an array script:
 
 a) ./make_picard_jobs_rgadd.sh > rgadd_commands.txt
+
 b) ./make_picard_jobs_dups.sh > dups_commands.txt
 
 Run commands files using run_picard.sh
@@ -94,7 +95,9 @@ Step 10: Sex Association and Population Genomics
 *SEX ASSOCIATION*
 
 a) make_input_step1.sh >> produces .map and .ped files
+
 b) make_input_step2.sh >> produces .bam, .bed, and .fam files
+
 c) sex_association.sh >> output file is .assoc.txt, which is what will be used to plot
 
 *POPGEN*
@@ -103,11 +106,16 @@ a) Create input files (can do in another directory to prevent confusion with Sex
 *produces .fam, .bed, .bim*
 
 PCA: 
+
 a) Calculate matrices >> hypo_pca.sh
+
 b) Plot PCA results >> hypo_pca.R (if running in cluster, see run_script.sh)
 
 ADMIXTURE:
+
 a) Install ADMIXTURE >> newest cluster we used did not have it as module
+
 b) Run ADMIXTURE >> run_admix.sh 
 *one line of run_admix.sh per K value - i.e., if you want to do from K=1 to K=10, must have 10 lines in run-admix.sh*
+
 c) Plot results >> admixture.R (if running in cluster, see run_script.sh)
