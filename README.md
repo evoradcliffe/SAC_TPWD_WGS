@@ -6,7 +6,7 @@ This is a repository for scripts used by Wynne V. Radcliffe to process raw sucke
 
 Step 1: Raw reads concatenated, quality checked with FastQC, and processed with CutAdapt and Trimmomatic. 
 
-*files should end in _R1.fastq.gz and _R2.fastq.g*
+*files should end in _R1.fastq.gz and _R2.fastq.gz*
 
 ########################################################################################################
 
