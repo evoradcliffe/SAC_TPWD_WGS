@@ -63,6 +63,10 @@ Step 7: GenotypeGVCFs
 
 Run genotype_gvcf.sh on cohort_combined.g.vcf . 
 
+*OPTIONAL GENOTYPING FOR INDIVIDUAL G.VCF IF ABOVE DOES NOT WORK*
+
+genotype_single.sh >> change intervals in .fof file each time
+
 ########################################################################################################
 
 Step 8: VCF processing
