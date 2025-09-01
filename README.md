@@ -108,6 +108,7 @@ c) sex_association.sh >> output file is .assoc.txt, which is what will be used t
 *POPGEN*
 
 a) Create input files (can do in another directory to prevent confusion with Sex Association files) >> make_admix_inputs.sh 
+
 *produces .fam, .bed, .bim*
 
 PCA: 
