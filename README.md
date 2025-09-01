@@ -72,6 +72,7 @@ genotype_single.sh >> change intervals in .fof file each time
 Step 8: VCF processing
 
 Subset for MONOMORPHIC SITES, SNPS, and MIXED/INDELS LOCI >> subset.sh
+
 *files will end in _mono_subset.vcf, _snps_subset.vcf, and _mixed_indels_subset.vcf*
 
 Apply hard-filter flags to sites from subset files >> filter.sh
@@ -120,6 +121,7 @@ ADMIXTURE:
 a) Install ADMIXTURE >> newest cluster we used did not have it as module
 
 b) Run ADMIXTURE >> run_admix.sh 
+
 *one line of run_admix.sh per K value - i.e., if you want to do from K=1 to K=10, must have 10 lines in run-admix.sh*
 
 c) Plot results >> admixture.R (if running in cluster, see run_script.sh)
