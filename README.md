@@ -20,7 +20,10 @@ The script make_align.sh will generate jobs (a list of commands, one for each sa
 
 ./make_align_comal.sh > raw_comal_commands.txt
 
+Run alignment using align_array.sh
+
 *files should end in _raw.bam*
+
 ########################################################################################################
 
 Step 3: Mark duplicates and add read groups
@@ -31,6 +34,8 @@ Again need to generate a list of commands to feed into an array script:
 
 a) ./make_picard_jobs_rgadd.sh > rgadd_commands.txt
 b) ./make_picard_jobs_dups.sh > dups_commands.txt
+
+Run commands files using align_array.sh
 
 *files should end in _rgadd.bam for (a) and _dupsmarked.bam for (b)*
 ########################################################################################################
