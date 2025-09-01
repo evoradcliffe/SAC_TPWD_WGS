@@ -35,7 +35,7 @@ Again need to generate a list of commands to feed into an array script:
 a) ./make_picard_jobs_rgadd.sh > rgadd_commands.txt
 b) ./make_picard_jobs_dups.sh > dups_commands.txt
 
-Run commands files using align_array.sh
+Run commands files using run_picard.sh
 
 *files should end in _rgadd.bam for (a) and _dupsmarked.bam for (b)*
 ########################################################################################################
