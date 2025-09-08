@@ -121,8 +121,10 @@ ADMIXTURE:
 
 a) Install ADMIXTURE >> newest cluster we used did not have it as module
 
-b) Run ADMIXTURE >> run_admix.sh 
+b) Filter for any individuals with missing data >> filter_admix.sh
+
+c) Run ADMIXTURE >> run_admix.sh 
 
 *one line of run_admix.sh per K value - i.e., if you want to do from K=1 to K=10, must have 10 lines in run-admix.sh*
 
-c) Plot results >> admixture.R (if running in cluster, see run_script.sh)
+d) Plot results >> admixture.R (if running in cluster, see run_script.sh)
